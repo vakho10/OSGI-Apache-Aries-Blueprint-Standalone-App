@@ -1,4 +1,4 @@
-# OSGI-Apache-Aries-Blueprint-Standalone-Maven-App
+# OSGI Standalone Application using Aries Blueprint
 Standalone OSGI maven application using Apache Aries Blueprint (both with and without annotations)
 
 ## Description
