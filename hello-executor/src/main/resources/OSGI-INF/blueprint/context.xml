@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+
+	<reference-list id="helloServiceReferenceList"
+		interface="org.hello.api.HelloService" member-type="service-object" />
+
+	<bean id="helloExecutorGuy" class="org.hello.executor.ExecutorGuy"
+		init-method="init" destroy-method="destroy">
+		<property name="helloServicesList">
+			<ref component-id="helloServiceReferenceList" />
+		</property>
+	</bean>
+
+</blueprint>

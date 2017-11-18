@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+
+	<service id="helloService" ref="georgianHelloService"
+		interface="org.hello.api.HelloService" />
+
+	<bean id="georgianHelloService" class="org.hello.georgian.GeorgianHelloService"
+		init-method="init" destroy-method="destroy" />
+
+</blueprint>
